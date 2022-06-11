@@ -1,0 +1,113 @@
+body{
+	padding: 0px 100px;
+}
+h1{
+	font-family: 'Style Script', cursive;
+}
+h2{
+	font-family: 'Open Sans', sans-serif;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #C0C0C0;
+  position: fixed; 
+  top: 0;
+  width: 85.8%;
+}
+.navbar img{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+.navbar a{
+	float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 40px;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+div img.banner{
+	margin-right: 100px;
+	margin-top: 40px;
+	width: 100%;
+}
+
+/*main*/
+#content a.datsan{
+	border: 1px solid #FF0000;
+	padding: 12px 15px;
+	text-decoration: none;
+	background-color: #FF0000;
+	float: left;
+	border-radius: 10px;
+}
+#content a.datsan:hover{
+	background-color: #C0C0C0;
+	color: black;
+	border-radius: 10px;
+}
+main{
+	margin-bottom: 20px;
+}
+.d-flex{
+	display: flex;
+	text-align: center;
+}
+ul.foot-ball-fied-list li{
+	flex: 360px 0 1;
+	list-style-type: none;
+}
+ul.foot-ball-fied-list li img{
+	width: 360px;
+	height: 280px;
+}
+.justify-content-bettwen{
+	justify-content: space-between;
+}
+ul.foot-ball-fied-list li a.post-title{
+	color: #5F5F5F;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-top: 10px;
+	display: block;
+}
+ul.foot-ball-fied-list li a.foot-ball-fied-post{
+	display: block;
+	overflow: hidden;
+}
+ul.foot-ball-fied-list li a.foot-ball-fied-post img{
+	transition: 0.25s;
+}
+
+ul.foot-ball-fied-list li a.foot-ball-fied-post:hover img{
+	transform: scale(1.05);
+} 
+
+.box_body{
+	padding-bottom: 10px;
+	border-bottom: 2px solid #C0C0C0;
+}
+
+/*footer*/
+
+.col-wrap{
+	display: table;
+	width: 100%;
+	background-color: #C0C0C0;
+	border-radius: 5px;
+}
+.col{
+	display: table-cell;
+	padding: 0px 300px 0px 100px;
+}
+.col a{
+	text-decoration: none;
+	padding: 12px 15px;
+}

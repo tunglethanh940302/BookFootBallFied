@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="wiewport" content="width=device, initial-scale=1.0">
+    <title>SânBóng</title>
+    <link rel="stylesheet" href="css/style_timsan.css">
+    <link rel="stylesheet" href="css/desponsive.css">
+    <script src="https://kit.fontawesome.com/0275da19c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="navbar" class="navbar">
+            <img src="images/logo.jpg" alt="logo">
+            <a href="index.html">Trang Chủ</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="timsan.html">Tìm sân</a>
+            <i class="fas fa-bars" id="toggle" onclick="myFunction()"></i>
+        </div>
+        <div><img class="banner" src="images/tung1.jpg" alt="banner1"></div>
+    </header>
+    <main>
+        <div class="sanbong">
+            <h2>SÂN BÓNG NỔI BẬT</h2>
+        </div>
+        <div class="box_body">
+            <ul class="foot-ball-fied-list d-flex justify-content-bettwen">
+                <li>
+                    <a href="details-1.html" class="foot-ball-fied-post">
+                        <img src="images/image3.jpg" alt="image1">
+                    </a>
+                    <a href="details-1.html" class="post-title">
+				Sân Thanh Tùng</a>
+                </li>
+                <li>
+                    <a href="details-2.html" class="foot-ball-fied-post">
+                        <img src="images/details-1-1.jpg" alt="image2">
+                    </a>
+                    <a href="details-2.html" class="post-title">
+				Sân VIMECO</a>
+                </li>
+                <li>
+                    <a href="details-3.html" class="foot-ball-fied-post">
+                        <img src="images/sb7.jpg" alt="image3">
+                    </a>
+                    <a href="details-3.html" class="post-title">
+				Sân Đa Quốc Nha Trang</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="col-wrap">
+            <div class="col">
+                <h3>THUÊ SÂN BÓNG</h3>
+                <p><a href="mailto:tungltfx11774@funix.edu.vn"><i class="fas fa-envelope"></i>  tungltfx11774@funix.edu.vn</a><br>
+                    <a href="https://www.facebook.com/profile.php?id=100035998475543"><i class="fab fa-facebook"></i>  Thanh Tùng</a><br>
+                    <a href="tel:0912345678"><i class="fas fa-phone"></i>  012345678</a>
+                </p>
+            </div>
+            <div class="col">
+                <h3>THÔNG TIN</h3>
+                <p><a href="index.html">Trang Chủ</a><br>
+                    <a href="about.html">Giới thiệu</a><br>
+                    <a href="timsan.html">Tìm sân</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+            var link = document.getElementById('navbar');
+            if (link.className === "navbar") {
+                link.className += " responsive";
+                console.log(link);
+            } else {
+                link.className = "navbar";
+            }
+        }
+    </script>
+</body>
+
+</html>

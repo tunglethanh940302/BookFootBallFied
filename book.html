@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="wiewport" content="width=device, initial-scale=1.0">
+    <title>SânBóng</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/desponsive.css">
+    <script src="https://kit.fontawesome.com/0275da19c3.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div id="navbar" class="navbar">
+
+            <img src="images/logo.jpg" alt="logo">
+            <a href="index.html">Trang Chủ</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="timsan.html">Tìm sân</a>
+            <i class="fas fa-bars" id="toggle" onclick="myFunction()"></i>
+
+        </div>
+        <div><img class="banner" src="images/tung1.jpg" alt="banner1"></div>
+    </header>
+    <main>
+        <article>
+            <form id="form-book-ff" action="" method="post">
+                <fieldset>
+                    <legend>
+                        <h1>ĐẶT SÂN</h1>
+                    </legend>
+                    <table>
+                        <tr>
+                            <th>Tên sân</th>
+                            <td>Sân bóng nhân tạo Thanh Tùng</td>
+                        </tr>
+                        <tr>
+                            <th>Địa chỉ</th>
+                            <td>Ngõ 55-57,Đường Trần Phú, Hà Đông(trong trường Đại học Nghệ thuật Trung ương)</td>
+                        </tr>
+                        <tr>
+                            <th>Liên hệ</th>
+                            <td>0962332538-Anh Tùng</td>
+                        </tr>
+                        <tr>
+                            <th>Tên người đặt</th>
+                            <td>
+                                <input type="text" id="name" name="name" placeholder="Nguyễn Trung Anh" size="50" maxlength="50" required>
+                                <p id="ten"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Số điện thoại</th>
+                            <td>
+                                <input type="tel" id="phone" pattern=[0-9]{4}-[0-9]{3}-[0-9]{3} value="0123-456-789" size="50" maxlength="50" required>
+                                <p id="sdt"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Đặt khung giờ</th>
+                            <td>
+                                <select id="khunggio" name="khunggio" required>
+									<option value="">---Chọn khung giờ---</option>
+									<option value="1">06:00 - 16:00: 300k/h</option>	
+									<option value="2">16:00 - 17:30: 600k/h</option>
+									<option value="3">17:30 - 20:30: 800k/h</option>
+									<option value="4">20:30 - 22:00: 400k/h</option>
+								</select>
+                                <p id="chonkhunggio"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Số giờ</th>
+                            <td>
+                                <input type="number" id="time" name="time" value="2" min="1" required>
+                                <p id="sogio"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Số người chơi</th>
+                            <td>
+                                <input type="number" id="mem" name="mem" value="20" min="0" required>
+                                <p id="songuoi"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Số đội chơi</th>
+                            <td>
+                                <input type="number" id="team" name="team" value="2" min="2" required>
+                                <p id="sodoi"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Đặt định kì</th>
+                            <td>
+                                <input type="radio" id="No" name="datdinhki" value="No" required> Không
+                                <br>
+                                <input type="radio" id="weekly" name="datdinhki" value="weekly" checked> Hàng tuần<br>
+                                <input type="radio" id="monthly" name="datdinhki" value="monthly"> Hàng tháng
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Dịch vụ thêm</th>
+                            <td>
+                                <input type="checkbox" id="fwater" name="dichvuthem" value="fwater"> Nước uống miễn phí<br>
+                                <input type="checkbox" id="uniform" name="dichvuthem" value="uniform"> Đồng phục thi đấu(300k/đội)<br>
+                                <input type="checkbox" id="trongtai" name="dichvuthem" value="trongtai"> Thuê trọng tài(200/h)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Tổng tiền</th>
+                            <td>
+                                <p id="total"><b></b></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td><input onclick="send()" type="button" id="btn" value="Thành tiền">
+                                <input onclick="thongbao()" type="button" id="sbm" value="Đặt sân">
+                            </td>
+
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+
+
+        </article>
+
+    </main>
+    <footer>
+        <div class="col-wrap">
+            <div class="col">
+                <h3>THUÊ SÂN BÓNG</h3>
+                <p><a href="mailto:tungltfx11774@funix.edu.vn"><i class="fas fa-envelope"></i>  tungltfx11774@funix.edu.vn</a><br>
+                    <a href="https://www.facebook.com/profile.php?id=100035998475543"><i class="fab fa-facebook"></i>  Thanh Tùng</a><br>
+                    <a href="tel:0912345678"><i class="fas fa-phone"></i>  012345678</a>
+                </p>
+            </div>
+            <div class="col">
+                <h3>THÔNG TIN</h3>
+                <p><a href="index.html">Trang Chủ</a><br>
+                    <a href="about.html">Giới thiệu</a><br>
+                    <a href="timsan.html">Tìm sân</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/book.js"></script>
+</body>
+
+</html>
